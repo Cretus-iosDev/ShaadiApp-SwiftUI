@@ -186,20 +186,7 @@ extension View {
             .opacity(condition ? 0.6 : 1)
     }
 }
-struct OnboardingButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        
-        ZStack {
-            RoundedRectangle(cornerRadius: 10, style: .continuous )
-                .frame(height: 49)
-                .foregroundColor(Color(.systemBlue))
-            
-            configuration.label
-                .fontWeight(.semibold)
-                .foregroundColor(Color(.white))
-        }
-    }
-}
+
 
 struct PhoneNumberView_Previews: PreviewProvider {
     static var previews: some View {
